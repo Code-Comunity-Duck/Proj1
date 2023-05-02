@@ -1,3 +1,31 @@
+:root{
+  --corp1:hsl(171, 66%, 44%);
+  --corp2:hsl(233, 100%, 69%);
+  --corn1:hsl(210, 10%, 33%);
+  --corn2:hsl(201, 11%, 66%);
+}
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.125rem;
+}
+
 * {
   margin: 0;
   border: 0;
