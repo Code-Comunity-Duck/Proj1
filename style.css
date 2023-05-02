@@ -19,3 +19,63 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1.125rem;
 }
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10.3125rem;
+  min-height: 9.375rem;
+  padding: 0 10.3125rem;
+  color: hsl(210, 10%, 33%);
+  background-color: hsla(220, 18%, 97%, 1);
+}
+
+footer nav div {
+  display: flex;
+  align-items: center;
+  gap: 8.4375rem;
+  max-width: 53.4375rem;
+}
+
+footer nav img {
+  width: 3.4375rem;
+  aspect-ratio: 1;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer nav div ul {
+  flex-wrap: wrap;
+  gap: 0.75rem 1.875rem;
+  line-height: 30px;
+}
+
+footer nav div ul li {
+  width: 10rem;
+}
+
+footer nav > ul {
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 48rem) {
+  footer nav {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3.25rem 6.875rem;
+  }
+
+  footer nav div {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  footer nav div ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
