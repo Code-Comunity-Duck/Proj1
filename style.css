@@ -3,7 +3,7 @@
   border: 0;
   padding: 0;
   box-sizing: border-box;
-  font: inherit;
+  font-family: 'Bai Jamjuree';
 }
 
 ul {
@@ -19,3 +19,113 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 1.125rem;
 }
+ 
+
+footer .imgs{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+margin-bottom: 50px;
+}
+.imgs img{
+  
+  align-items: center;
+ justify-content: center;
+ text-align: center;
+ justify-content: space-between;
+ margin-right: 50px
+} 
+footer h2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer p {
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+footer button {
+  margin-bottom: 40px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 300px;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  width: 280px;
+}
+
+
+footer button.ios:hover{
+  cursor: pointer;
+}
+footer button.ios{
+  background-color: hsl(233, 100%, 69%);
+  cursor: pointer;
+}
+
+footer button.mac {
+  background-color: hsl(171, 66%, 44%);
+}
+footer button.mac:hover {
+  cursor: pointer;
+}
+.foot {
+  background-color: rgb(151, 136, 136);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.foot .logo {
+  
+  align-items: baseline;
+  width: 50px;
+}
+
+.foot .texts ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.foot .texts li::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid black;
+}
+
+footer .icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+footer .icons li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: grey;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
