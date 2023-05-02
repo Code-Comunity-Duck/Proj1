@@ -98,12 +98,16 @@ footer button.mac:hover {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  list-style-position: inside;
+  columns: 3;
+  
 }
 
 .foot .texts li::after {
   content: "";
   display: block;
   border-bottom: 1px solid black;
+  
 }
 
 footer .icons {
@@ -123,6 +127,8 @@ footer .icons li {
   text-align: center;
   display: flex;
   justify-content: center;
+  
+  
 
 }
 
