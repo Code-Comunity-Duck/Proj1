@@ -257,24 +257,25 @@ main .second-section img {
 }
 
 main .third-section {
-  max-width: 69rem;
+  max-width: 70rem;
   margin: 0 auto;
+  display: flex;
   text-align: center;
+  flex-direction: column;
 }
 
 main .third-section .three-items {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-  background-color: blue;
+  justify-content: space-between;
+  margin-top: 3.5rem;
 }
 
 main .third-section .three-items div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  max-width: 22rem;
 }
 
 main .third-section .three-items h2 {
