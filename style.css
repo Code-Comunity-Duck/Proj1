@@ -258,7 +258,7 @@ main .second-section img {
 
 main .third-section {
   max-width: 70rem;
-  margin: 0 auto;
+  margin: 0 auto 9rem;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -268,14 +268,20 @@ main .third-section .three-items {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 3.5rem;
+  margin-top: 4.4rem;
 }
 
-main .third-section .three-items div {
+main .third-section .three-items > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 22rem;
+  max-width: 22.6rem;
+  min-height: 11rem;
+}
+
+main .third-section .three-items img {
+  height: 2.1rem;
+  margin-bottom: 2rem;
 }
 
 main .third-section .three-items h2 {
