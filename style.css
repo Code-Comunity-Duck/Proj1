@@ -197,3 +197,90 @@ footer nav > ul {
     text-align: center;
   }
 }
+
+main h2 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  color: hsl(201, 11%, 66%);
+  line-height: 30px;
+}
+
+main .first-section div:first-child {
+  max-width: 45.625rem;
+  text-align: center;
+  margin: 0 auto 4rem;
+}
+
+main .first-section div:last-child {
+  display: flex;
+}
+
+main .first-section div:last-child img{
+  position: relative;
+  left: -2rem;
+}
+
+main .first-section div:last-child div{
+  display: flex;
+  flex-direction: column;
+  max-width: 22rem;
+  margin: 4rem 0 0 6rem;
+}
+
+main .first-section div:last-child div h2{
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+main .first-section div:last-child div p{
+ font-size: 1rem;
+ margin-bottom: 3rem;
+}
+
+main .second-section {
+  max-width: 45.625rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7.5rem auto 0;
+}
+
+main .second-section img {
+  max-width: 60rem;
+  margin-top: 5rem;
+}
+
+main .third-section {
+  max-width: 69rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .third-section .three-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: blue;
+}
+
+main .third-section .three-items div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .third-section .three-items h2 {
+  font-size: 1.3rem;
+}
+
+main .third-section .three-items p {
+  font-size: 1rem;
+}
