@@ -31,45 +31,37 @@ header {
     22.6875rem;
 }
 
-header section {
-  text-align: center;
-  max-width: 45.625rem;
-  margin: 0 auto;
-}
-
-header section img {
+header img {
   display: block;
   margin: 0 auto;
 }
 
-header section h1 {
-  font-weight: 600;
+header section {
+  margin-top: 3.4375rem;
+}
+
+header .section-heading h1 {
   font-size: 2.875rem;
   line-height: 50px;
   letter-spacing: -0.046875rem;
-  margin-top: 3.4375rem;
-  color: hsl(210, 10%, 33%);
 }
 
-header section p {
+header .section-heading p {
   font-size: 1.25rem;
-  line-height: 30px;
-  letter-spacing: 0.009375rem;
   margin-top: 1rem;
-  color: hsl(201, 11%, 66%);
 }
 
-header .buttons {
+header .section-buttons {
   margin-top: 3.4375rem;
 }
 
-.buttons {
+.section-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.buttons button {
+.section-buttons button {
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0.03125rem;
@@ -79,23 +71,23 @@ header .buttons {
   color: hsl(0, 0%, 100%);
 }
 
-.buttons button:first-of-type {
+.section-buttons button:first-of-type {
   background-color: hsl(171, 66%, 44%);
   box-shadow: 0px 10px 20px hsla(171, 66%, 44%, 0.5),
     inset 0px -3px 0px hsla(0, 0%, 0%, 0.15);
 }
 
-.buttons button:last-of-type {
+.section-buttons button:last-of-type {
   background-color: hsl(233, 100%, 69%);
   box-shadow: 0px 10px 20px hsla(233, 100%, 69%, 0.5),
     inset 0px -3px 0px hsla(0, 0%, 0%, 0.15);
 }
 
-.buttons button:first-of-type:hover {
+.section-buttons button:first-of-type:hover {
   background-color: hsla(171, 66%, 44%, 0.9);
 }
 
-.buttons button:last-of-type:hover {
+.section-buttons button:last-of-type:hover {
   background-color: hsla(233, 100%, 69%, 0.9);
 }
 
@@ -110,24 +102,25 @@ header .buttons {
     padding: 7.625rem 0 10rem;
   }
 
-  header section h1 {
-    font-size: 2rem;
-    line-height: 40px;
+  header section {
     margin-top: 4rem;
   }
 
-  header section p {
-    font-size: 1rem;
-    line-height: 25px;
+  header .section-heading h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  header .section-heading p {
     letter-spacing: 0.0075rem;
   }
 
-  .buttons {
+  .section-buttons {
     flex-direction: column;
     margin-top: 3rem;
   }
 
-  .buttons button {
+  .section-buttons button {
     width: unset;
   }
 }
@@ -138,10 +131,6 @@ header .buttons {
   }
 }
 
-footer {
-  padding-top: 9.375rem;
-}
-
 .advertising {
   display: flex;
   flex-wrap: wrap;
@@ -149,80 +138,90 @@ footer {
   align-items: center;
   gap: 4.375rem;
   max-width: 69.375rem;
-  margin: 0 auto;
+  margin: 9.375rem auto 0;
 }
 
-footer section {
-  text-align: center;
-  max-width: 45.625rem;
-  margin: 0 auto;
+.clipboard {
   margin-top: 10.625rem;
 }
 
-footer section h2 {
+footer {
+  margin-top: 9.375rem;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 45.625rem;
+  margin: 0 auto;
+}
+
+.section-heading > h1,
+.section-heading > h2 {
   font-weight: 600;
   font-size: 2.25rem;
   line-height: 45px;
-  letter-spacing: -0.03125rem;
+  letter-spacing: -0.0375rem;
   color: hsl(210, 10%, 33%);
 }
 
-footer section p {
-  font-size: 1.25rem;
+.section-heading > p {
   line-height: 30px;
-  letter-spacing: 0.0084375rem;
+  letter-spacing: 0.009375rem;
   margin-top: 1.25rem;
   color: hsl(201, 11%, 66%);
 }
 
-footer .buttons {
+.clipboard .section-buttons {
   margin-top: 3rem;
 }
 
-footer nav {
+footer {
+  background-color: hsla(220, 18%, 97%, 1);
+  color: hsl(210, 10%, 33%);
+}
+
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10.3125rem;
+  max-width: 69.375rem;
   min-height: 9.375rem;
-  margin-top: 9.375rem;
-  padding: 0 10.3125rem;
-  color: hsl(210, 10%, 33%);
-  background-color: hsla(220, 18%, 97%, 1);
+  margin: 0 auto;
 }
 
-footer nav div {
+nav div {
   display: flex;
   align-items: center;
   gap: 8.4375rem;
   max-width: 53.4375rem;
 }
 
-footer nav img {
+nav img {
   width: 3.4375rem;
   aspect-ratio: 1;
 }
 
-footer nav ul {
+nav ul {
   display: flex;
 }
 
-footer nav div ul {
+nav div ul {
   flex-wrap: wrap;
   gap: 0.75rem 1.875rem;
   line-height: 30px;
 }
 
-footer nav div ul li {
+nav div ul li {
   width: 10rem;
 }
 
-footer nav > ul {
+nav > ul {
   gap: 1.5rem;
   font-size: 1.5rem;
 }
 
-footer nav a:hover {
+nav a:hover {
   color: hsl(171, 66%, 44%);
 }
 
@@ -230,48 +229,153 @@ footer nav a:hover {
   .advertising {
     padding: 0 7.5rem;
   }
+
+  nav {
+    padding: 0 7.5rem;
+  }
 }
 
 @media only screen and (max-width: 48rem) {
-  footer nav {
+  nav {
     flex-direction: column;
     gap: 3rem;
-    padding: 3.25rem 6.875rem;
+    padding: 3.25rem 0;
   }
 
-  footer nav div {
+  nav div {
     flex-direction: column;
     gap: 2.5rem;
   }
 
-  footer nav div ul {
+  nav div ul {
     flex-direction: column;
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 37.5rem) {
-  footer {
-    padding-top: 8.125rem;
+  .advertising {
+    margin-top: 8.125rem;
   }
 
-  footer section h2 {
+  .section-heading > h1,
+  .section-heading > h2 {
     font-size: 1.75rem;
     line-height: 35px;
-    margin-top: 4rem;
+    letter-spacing: -0.028125rem;
   }
 
-  footer section p {
-    font-size: 1rem;
+  .section-heading > p {
+    font-size: 1rem !important;
     line-height: 25px;
     margin-top: 1rem;
   }
 
-  footer .buttons {
+  footer .section-buttons {
     margin-top: 2.8125rem;
   }
 
-  footer nav {
+  footer {
     margin-top: 10.625rem;
   }
+}
+
+.track-snippets > div:last-child {
+  display: flex;
+  gap: 6.875rem;
+  position: relative;
+  left: -1.875rem;
+  max-width: 75.75rem;
+  margin-top: 9.375rem;
+}
+
+.track-snippets > div:last-child img {
+  max-width: 47rem;
+  width: 100%;
+}
+
+.track-snippets > div:last-child > div {
+  max-width: 21.875rem;
+}
+
+.track-snippets > div:last-child > div div:not(:first-child) {
+  margin-top: 3.5rem;
+}
+
+.track-snippets > div:last-child > div div h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.025rem;
+  color: hsl(210, 10%, 33%);
+}
+
+.track-snippets > div:last-child > div div p {
+  font-size: 1rem;
+  line-height: 30px;
+  letter-spacing: 0.0075rem;
+  margin-top: 0.5rem;
+  color: hsl(201, 11%, 66%);
+}
+
+@media only screen and (max-width: 75.75rem) {
+  .track-snippets > div:last-child {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    position: unset;
+  }
+
+  .track-snippets > div:last-child div {
+    text-align: center;
+  }
+}
+
+.access-clipboard {
+  margin-top: 5rem;
+}
+
+.access-clipboard img {
+  display: block;
+  max-width: 56.5625rem;
+  width: 100%;
+  margin: 6.875rem auto 0;
+}
+
+.supercharge-workflow {
+  margin-top: 5rem;
+}
+
+.supercharge-workflow > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+  text-align: center;
+  max-width: 69.375rem;
+  min-height: 13.5rem;
+  margin: 4.5rem auto 0;
+}
+
+.supercharge-workflow > div:last-child div {
+  width: 21.875rem;
+}
+
+.supercharge-workflow > div:last-child div figure {
+  height: 2.5rem;
+}
+
+.supercharge-workflow > div:last-child div h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.025rem;
+  margin-top: 2.5rem;
+  color: hsl(210, 10%, 33%);
+}
+
+.supercharge-workflow > div:last-child div p {
+  font-size: 1rem;
+  line-height: 30px;
+  letter-spacing: 0.0075rem;
+  margin-top: 1rem;
+  color: hsl(201, 11%, 66%);
 }
